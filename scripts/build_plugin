@@ -1,0 +1,6 @@
+#!/bin/sh
+
+yarn build &&
+cp -rf build/ plugin/chrome/build/ &&
+cp -rf build/ plugin/firefox/build/ &&
+cp -rf build/ plugin/react-extension.safariextension/build/

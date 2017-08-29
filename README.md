@@ -1,8 +1,11 @@
+# React Browser Extension
+
+Cross-browser extension on top of React/Redux app.
+
+## How to run
+
 ```shell
 npm install -g yarn
 yarn
-THEN
-yarn start
-OR
-yarn build
+yarn build_plugin
 ```
