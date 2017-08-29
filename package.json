@@ -5,16 +5,33 @@
   "homepage": ".",
   "dependencies": {
     "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-scripts": "1.0.12"
+    "react-dom": "^15.6.1"
   },
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "build_plugin": "scripts/build_plugin",
-    "test": "CI=true react-app-rewired test --env=jsdom"
+    "test": "CI=true react-app-rewired test --env=jsdom",
+    "lint": "node_modules/.bin/eslint src"
   },
   "devDependencies": {
-    "react-app-rewired": "^1.2.4"
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0",
+    "eslint-watch": "^3.1.2",
+    "react-app-rewired": "^1.2.4",
+    "react-scripts": "^1.0.12"
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "rules": {
+      "react/jsx-filename-extension": 0
+    },
+    "env": {
+      "browser": true,
+      "jest": true
+    }
   }
 }
